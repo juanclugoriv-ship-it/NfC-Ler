@@ -87,7 +87,7 @@ class MainActivity : Activity() {
         nfcAdapter?.enableReaderMode(
             this,
             { },
-            NfcAdapter.FLAG_READER_SKIP_NDEF_CHECK or NfcAdapter.FLAG_READER_NO_DISPATCH,
+            NfcAdapter.FLAG_READER_NFC_A or NfcAdapter.FLAG_READER_SKIP_NDEF_CHECK,
             null
         )
     }

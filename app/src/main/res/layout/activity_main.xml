@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emulador de Enlaces NFC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etUrlInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="https://tu-sitio-web.com"
+        android:inputType="textUri" />
+
+    <Button
+        android:id="@+id/btnAddUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Enlace" />
+
+    <TextView
+        android:id="@+id/tvActiveUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="#E0F7FA"
+        android:textColor="#006064"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="Activo: Ninguno seleccionado" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toca un enlace para activarlo:"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <ListView
+        android:id="@+id/lvUrls"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
